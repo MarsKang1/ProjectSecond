@@ -1,0 +1,113 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+
+    <style
+        name="AppTheme.NoActionBar"
+        parent="AppTheme"
+        >
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SplashTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="AppThemeFullImage"
+        parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@mipmap/shadow_left</item>
+        <item name="shadow_right">@mipmap/shadow_right</item>
+        <item name="shadow_bottom">@mipmap/shadow_bottom</item>
+    </style>
+
+    <style name="textToolbarTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#d3d3d3</item>
+    </style>
+
+    <style name="subscribe_seperate_line">
+        <item name="android:background">@color/seperate_line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+        <item name="android:layout_marginTop">14.0dip</item>
+        <item name="android:layout_marginBottom">14.0dip</item>
+    </style>
+
+    <!-- 对话框从底部弹出动画 -->
+    <style name="BottomDialogAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_dialog_out</item>
+    </style>
+
+
+
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+
+    <declare-styleable name="TwinklingRefreshLayout">
+        <attr name="tr_wave_height" format="dimension"/>
+        <attr name="tr_head_height" format="dimension"/>
+        <attr name="tr_bottom_height" format="dimension"/>
+        <attr name="tr_overscroll_height" format="dimension"/>
+        <attr name="tr_enable_loadmore" format="boolean"/>
+        <attr name="tr_pureScrollMode_on" format="boolean"/>
+        <attr name="tr_overscroll_top_show" format="boolean"/>
+        <attr name="tr_overscroll_bottom_show" format="boolean"/>
+        <attr name="tr_enable_overscroll" format="boolean"/>
+        <attr name="tr_headerView" format="dimension"/>
+        <attr name="tr_bottomView" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="TagCloudLayout">
+        <attr name="lineSpacing" format="dimension" />
+        <attr name="tagSpacing" format="dimension" />
+        <!-- 是否是固定布局 -->
+        <attr name="isFixed" format="boolean" />
+        <attr name="columnSize" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchIconView">
+        <attr name="si_tint_color" format="color"/>
+        <attr name="si_animation_duration" format="integer"/>
+        <attr name="si_disabled_alpha" format="float"/>
+        <attr name="si_disabled_color" format="color"/>
+        <attr name="si_enabled" format="boolean"/>
+        <attr name="si_no_dash" format="boolean"/>
+    </declare-styleable>
+
+    <item name="ex_header" type="id"/>
+</resources>
